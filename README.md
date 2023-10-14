@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-iter-to-array-each/tags). For example,
+
+```javascript
 import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@v0.1.0-esm/index.mjs';
 ```
 
@@ -118,7 +123,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
 import nditerRows from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-rows@esm/index.mjs';
-import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@v0.1.0-esm/index.mjs';
+import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@esm/index.mjs';
 
 // Define an input array:
 var x = array( zeroTo( 27 ), {
