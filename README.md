@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-iter-to-array-each
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var nditer2arrayEach = require( '@stdlib/ndarray-iter-to-array-each' );
+import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@esm/index.mjs';
 ```
 
 #### nditer2arrayEach( iterator )
@@ -76,8 +60,8 @@ var nditer2arrayEach = require( '@stdlib/ndarray-iter-to-array-each' );
 Returns an iterator which [converts][@stdlib/ndarray/to-array] each iterated [`ndarray`][@stdlib/ndarray/ctor] to a generic array (which may include nested arrays).
 
 ```javascript
-var array = require( '@stdlib/ndarray-array' );
-var nditerRows = require( '@stdlib/ndarray-iter-rows' );
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
+import nditerRows from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-rows@esm/index.mjs';
 
 var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 // returns <ndarray>
@@ -125,11 +109,16 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var zeroTo = require( '@stdlib/array-base-zero-to' );
-var nditerRows = require( '@stdlib/ndarray-iter-rows' );
-var nditer2arrayEach = require( '@stdlib/ndarray-iter-to-array-each' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
+import nditerRows from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-rows@esm/index.mjs';
+import nditer2arrayEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-iter-to-array-each@esm/index.mjs';
 
 // Define an input array:
 var x = array( zeroTo( 27 ), {
@@ -148,6 +137,10 @@ while ( true ) {
     }
     console.log( v.value );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -186,7 +179,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -248,9 +241,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
 
-[@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray-to-array
+[@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray-to-array/tree/esm
 
 <!-- <related-links> -->
 
